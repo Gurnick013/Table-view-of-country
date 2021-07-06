@@ -4,7 +4,7 @@ import './Header.css'
 const Header: React.FC = () => {
     return (
         <div >
-            <h1 className='wrapper-header'>Table view of country</h1>
+            <h1 className='wrapper-header'>Table view of countries</h1>
         </div>
     )
 }

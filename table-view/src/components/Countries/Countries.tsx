@@ -6,8 +6,8 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import ArrowDownwardIcon from "@material-ui/core/Icon/Icon";
-import { IconButton, withStyles } from "@material-ui/core";
+
+import { withStyles } from "@material-ui/core";
 import { IArrayCountries, ICountriesProps } from "../../interface/interface";
 
 const Countries: React.FC<ICountriesProps> = (props: ICountriesProps) => {
@@ -37,26 +37,23 @@ const Countries: React.FC<ICountriesProps> = (props: ICountriesProps) => {
   return (
     <>
       <button name="name" onClick={handelSort}>
-        name
+      Sort by name 
       </button>
       <button name="capital" onClick={handelSort}>
-        capital
+      Sort by capital
       </button>
       <button name="code" onClick={handelSort}>
-        code
+      Sort by code
       </button>
       <button name="currency" onClick={handelSort}>
-        currency
+      Sort by currency
       </button>
       <TableContainer component={Paper}>
         <Table className="" aria-label="customized table">
           <TableHead>
             <TableRow>
               <StyledTableCell>
-                Countries
-                <IconButton aria-label="delete" size="small">
-                  <ArrowDownwardIcon fontSize="inherit" />
-                </IconButton>
+                Countries                
               </StyledTableCell>
               <StyledTableCell align="right">Capital</StyledTableCell>
               <StyledTableCell align="right">Code</StyledTableCell>

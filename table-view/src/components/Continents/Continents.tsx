@@ -22,7 +22,7 @@ const Continents: React.FC = () => {
       </div>
     );
   if (error) return <div className="loading">Error !!!</div>;
-  console.log(data)
+  
   const dataIn = data?.continents;
   const nameCont = dataIn?.map((el: IDataIn) => el.name);  
 
