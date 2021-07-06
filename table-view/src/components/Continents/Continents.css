@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 50%;  
+}
